@@ -1,0 +1,156 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Buy Nendoroid In Here!</title>
+  <link rel="stylesheet" href="style modul 3.css">
+</head>
+
+<!-- untuk membuat auto scroll up -->
+<body>
+ 
+
+  <header>
+    <div class="header-logo">
+      <p> Kawaii Nendoroid</p>
+    </div>
+    <div class="header-list">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#contact">Contact For Order</a></li>
+      </ul>
+    </div>
+
+    <!-- untuk membuat tampilan garis tiga menu navbar  -->
+    <div class="menunavbar" onclick="showSidebar()">
+      <!-- untuk membuat icon garis tiga navbar -->
+      <svg viewBox="0 0 100 80" width="40" height="40">
+    <!-- tag rect digunakan untuk menentukan lebar dan tinggi icon garis 3 navbar. 
+      rect shape   itu objek yg berbentuk persegi empat. background icon garis 3 kan kotak-->
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
+    </div>
+  </header>
+
+  <!-- membuat navbar dgn class side-nav -->
+  <div class="side-nav" id="side-nav">
+    <ul>
+  <!-- onclick adalah atribut HTML yang memiliki elemen klik -->
+      <li><a onclick="showSidebar()" href="#about">About</a></li>
+      <li><a onclick="showSidebar()" href="#collection">Collection</a></li>
+      <li><a onclick="showSidebar()" href="#contact">Contact For Order</a></li>
+    </ul>
+  </div>
+
+  <div class="banner">
+    <div class="container" id="about">
+      <h1>KAWAII NENDOROID</h1>
+      <h2>Kawaii Nendoroid merupakan sebuah website untuk membeli merchandise anime kesayangan kamu!
+        <p>Temukan koleksi Nendoroid dari karakter anime kesayangan kamu disini dengan penawaran diskon yang menarik!
+        </p>
+      </h2>
+    </div>
+
+    <div class="btn-daftar">
+      <a href="#" class="btn Registration"> Registration </a>
+      <a href="#" class="btn Order"> Order </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="content" id="collection">
+      <h3 class="judul-content">Available Collection</h3>
+      <div class="collection">
+        <img class=" gambar" src="levi nendo.jpeg" alt="" />
+        <p> Levi Ackerman </p>
+        <p> Rp. 990.000 </p>
+      </div>
+
+      <div class="collection">
+        <img class="gambar" src="toga nendo.png" alt="" />
+        <p> Himika Toga </p>
+        <p> Rp. 800.000 </p>
+      </div>
+
+      <div class="collection">
+        <img class=" gambar" src="naruto nendo.jpeg" alt="" />
+        <p> Naruto Shippudden</p>
+        <p> Rp. 750.000 </p>
+      </div>
+
+      <div class="collection">
+        <img class=" gambar" src="rengoku.jpeg" alt="" />
+        <p> Rengoku Kyoujurou </p>
+        <p> Rp. 865.000 </p>
+      </div>
+
+      <div class="collection">
+        <img class=" gambar" src="anya forger.jpeg" alt="" />
+        <p> Anya forger </p>
+        <p> Rp. 770.000 </p>
+      </div>
+
+      <div class="collection">
+        <img class="gambar" src="levi.jpeg" alt="" />
+        <p> Levi Ackerman & Hange Zoe</p>
+        <p> Rp. 1.350.000 </p>
+      </div>
+
+      <div class="collection">
+        <img class="gambar" src="eremika nendroid ♡︎.jpeg" alt="" />
+        <p> Eren Yeager & Mikasa Ackerman </p>
+        <p> Rp. 1.000.000 </p>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <h3 class="judul-content">Contact For Order</h3>
+      <div class="form">
+        <form action="#" method="get" accept-charset="utf-8">
+          <p>Email (wajib diisi)</p>
+          <input type="email" name="" id="" value="" />
+          <p>Pesan (wajib diisi)</p>
+          <textarea name="#"></textarea>
+          <p>Alamat</p>
+          <textarea name="#"></textarea>
+          <p></p>
+          <input class="submit" type="submit" name="#" id="#" value="Kirim" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">
+      <p>KAWAII NENDOROID</p>
+    </div>
+
+    <div class="footer-list">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#contact">Contact For Order</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#" class="scrollUp" id="scroll-Up">
+    <!-- untuk mencantumkan icon scroll up -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-up"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+    </svg>
+  </a>
+
+  </script>
+  <!-- script js untuk membuat tampilan smooth scroll -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- script js yang disambungkan ke HTML -->
+  <script src="script modul 4.js"></script>
+
+</body>
+</html>

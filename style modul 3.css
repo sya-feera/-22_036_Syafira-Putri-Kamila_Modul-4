@@ -1,0 +1,310 @@
+  html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  li,
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: orange;
+    color: #fff;
+    height: 62px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+  }
+
+  .header-list ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-list li {
+    padding: 20px 20px;
+    margin: 0;
+  }
+
+  .menunavbar {
+    display: none;
+  }
+
+  .side-nav {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    width: 0;
+    right: 0;
+    transition: 0.5s;
+    top: 0;
+    height: 100%;
+    background-color: orange;
+    bottom: 0;
+    align-items: center;
+  }
+
+  .side-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+  }
+
+  .side-nav li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .side-nav li a{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .side-nav li a:hover {
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(255, 149, 0);
+    height: 100%;
+    display: flex;
+    transition: background-color 0.5s ease;
+    justify-content: center;
+  }
+
+/* untuk mengatur tampilan skala desktop */
+  @media screen and (max-width: 768px){
+    header {
+      justify-content: space-between;
+    }
+  }
+
+  /* untuk mengatur tampilan skala mobile */
+  @media screen and (max-width: 700px){
+    header {
+      justify-content: space-between;
+    }
+
+    .header-list {
+      display: none;
+    }
+
+    .menunavbar {
+      height: 100%;
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .menunavbar svg {
+      padding: 20px 20px;
+      cursor: pointer;
+    }
+  }
+
+  .header-logo {
+    padding: 0 20px;
+    font-size: 36px;
+    float: left;
+    margin: 0;
+  }
+
+  .banner {
+    background: url(bg\ anime.png);
+    background-size: cover;
+    text-align: center;
+    padding: 10% 0%;
+    color: burlywood;
+  }
+
+  .banner .container {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .banner h1 {
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn-daftar {
+    margin: 30px 0;
+
+  }
+
+  .btn {
+    padding: 16px 32px;
+    border-radius: 4px;
+    display: inline-block;
+    color: azure;
+    font-size: 20px;
+  }
+
+  .registration {
+    background-color: blue;
+
+  }
+
+  .contact {
+    margin-top: 100px;
+  }
+
+  .order {
+    background-color: #55acee;
+
+  }
+
+  .btn:hover {
+    opacity: 0.8;
+  }
+
+  .btn-top {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .judul-content {
+    font-size: 28px;
+    border-bottom: 2px solid #dee7ec;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+
+  }
+
+  .collection {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .collection p {
+    font-size: 24px;
+    margin-top: 35px;
+  }
+
+  .gambar {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  input,
+  textarea {
+    border: 1px solid #9dd0ec;
+    width: 350px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .form p {
+    padding-bottom: 10px;
+  }
+
+  .submit {
+    font-size: 18px;
+    color: #889aeb;
+    background-color: #dee7ec;
+  }
+
+  footer {
+    background-color: orange;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .footer-logo {
+    font-size: 32px;
+    float: left;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .footer-list {
+    float: right;
+  }
+
+  .footer-list ul {
+    display: flex;
+  }
+
+  .footer-list li {
+    padding: 33px 20px;
+  }
+
+  .scrollUp {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: .3rem;
+    background: black;
+    border-radius: 0.4rem;
+    z-index: 5;
+    transition: .4s;
+  }
+
+  .scrollUp:hover {
+    background-color: grey;
+  }
+
+  .scrollUp_icon {
+    font-size: 1.8rem;
+    color: white;
+  }
